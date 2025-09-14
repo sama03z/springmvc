@@ -18,8 +18,12 @@ public class DemoApplication {
 //		return "Spring is here!";
 
 		String data = "";
+		data = "<html><body>"; 
 
-		data = "[" + getServerName() + "] "+ getServerIp() + " " + "springmvc loaded!!";
+		String data1 = "[<font color=red>" + getServerName() + "</font>] "+ getServerIp() + " " + "springmvc loaded!!";
+		
+		data = data1 + "</body></html>";
+		//data = "[" + getServerName() + "] "+ getServerIp() + " " + "springmvc loaded!!";
 
 		return data;
 	}
