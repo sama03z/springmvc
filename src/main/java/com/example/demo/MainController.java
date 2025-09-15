@@ -8,6 +8,6 @@ public class MainController {
 
 	@RequestMapping("/first")
 	public String index() {
-		return "First Project - Winter is comming!2";
+		return "First Project - Winter is comming!";
 	}
 }
