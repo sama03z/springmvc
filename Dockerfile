@@ -1,7 +1,10 @@
-FROM openjdk:8
-COPY target/*.jar /app.jar
 
-EXPOSE 80
+FROM eclipse-temurin:17-jre
 
-ENTRYPOINT ["java"]
-CMD ["-jar", "/app.jar"]
+WORKDIR /app
+
+COPY target/*.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
