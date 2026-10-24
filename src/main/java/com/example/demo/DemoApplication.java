@@ -20,7 +20,7 @@ public class DemoApplication {
 		String data = "";
 		data = "<html><body>"; 
 
-		String data1 = "[<font color=red>" + getServerName() + "</font>] <b>"+ getServerIp() + "</b> " + "springmvc loaded!!";
+		String data1 = "[<font color=red>" + getServerName() + "</font>] <b>"+ getServerIp() + "</b> " + "springmvc loaded!! Good Job!";
 		
 		data = data1 + "</body></html>";
 		//data = "[" + getServerName() + "] "+ getServerIp() + " " + "springmvc loaded!!";
